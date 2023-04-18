@@ -1,0 +1,35 @@
+textarea {
+    width:100%;
+}
+h1{
+    font-weight: bold;
+}
+#text1 {
+    font-size: 25px;
+    color : red;
+}
+#text2 {
+    font-size: 25px;
+    color : blue;
+}
+#text3 {
+    font-size: 25px;
+    color : green;
+}
+input[type=submit] {
+    margin-top: 10px;
+}
+
+.thead-md th{color:black;background-color:#b8f3b8;border-color:#454d55;}
+
+.btn-primarymd{color:#212529;background-color:#3CE544;border-color:#159D1C}.btn-primary:hover{color:#fff;background-color:#3CE544;border-color:#0062cc}.btn-primary.focus,.btn-primarymd:focus{color:#212529;background-color:#81CF78;border-color:#159D1C;box-shadow:0 0 0 .2rem rgba(16,190,21,.5)}.btn-primary.disabled,.btn-primary:disabled{color:#fff;background-color:#3CE544;border-color:#007bff}.btn-primary:not(:disabled):not(.disabled).active,.btn-primary:not(:disabled):not(.disabled):active,.show>.btn-primary.dropdown-toggle{color:#fff;background-color:#0062cc;border-color:#005cbf}.btn-primary:not(:disabled):not(.disabled).active:focus,.btn-primary:not(:disabled):not(.disabled):active:focus,.show>.btn-primary.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(38,143,255,.5)}
+
+.qa_title {
+    width: 40%;
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 30% 70px 30%;
+    font-weight: bold;
+    border-bottom: 6px double #A4A5A5;
+    padding-bottom: 20px;
+}

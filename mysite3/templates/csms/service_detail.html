@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container my-3">
+    <h2 class = "border-bottom py-2">서비스 이용 내역 - {{ service.sNo }}</h2>
+    <div class="card my-3">
+        <div class="card-body">
+            <table border="1" cellpadding="20" width = '600px'>
+                <tbody>
+                <tr>
+                    <td class="text-center">고객코드</td>
+                    <td class="card-text" style="white-space: pre-line;">{{ service.ccode }}</td>
+                </tr>
+                <tr>
+                    <td class="text-center">이름</td>
+                    <td class="card-text" style="white-space: pre-line;">{{ service.cname }}</td>
+                </tr>
+                <tr>
+                    <td class="text-center">일시</td>
+                    <td class="card-text" style="white-space: pre-line;">{{ service.sDate }}</td>
+                </tr>
+                <tr>
+                    <td class="text-center">출발지</td>
+                    <td class="card-text" style="white-space: pre-line;">{{ service.departure }}</td>
+                </tr>
+                <tr>
+                    <td class="text-center">도착지</td>
+                    <td class="card-text" style="white-space: pre-line;">{{ service.arrival }}</td>
+                </tr>
+                <tr>
+                    <td class="text-center">요금</td>
+                    <td class="card-text" style="white-space: pre-line;">{{ service.fee }}</td>
+                </tr>
+                <tr>
+                    <td class="text-center">유형</td>
+                    <td class="card-text" style="white-space: pre-line;">{{ service.type }}</td>
+                </tr>
+                </tbody>
+            </table>
+                <div class="card-text" style="white-space: pre-line;">
+                    작성자 : {{ service.author.username}}
+                </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

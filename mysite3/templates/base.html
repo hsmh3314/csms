@@ -1,0 +1,31 @@
+{% load static %}
+<!doctype html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+    <!-- csms CSS -->
+    <link rel="stylesheet" type="text/css" href = "{% static 'style.css' %}">
+    <title>
+        Csms
+    </title>
+</head>
+<body style = "background-color:rgb(249, 253, 239);">
+{% include "navbar.html" %}
+<!-- 기본 템플릿 안에 삽입될 내용 start -->
+{% block content %}
+{% endblock %}
+<!-- 기본 템플릿 안에 삽입될 내용 end -->
+<!--jQuery JS-->
+<script src="{% static 'jquery-3.4.1.min.js' %}"></script>
+<!--Bootstrap JS-->
+<script src="{% static 'bootstrap.min.js' %}"></script>
+<!--자바스크립트 Start-->
+{% block script %}
+{% endblock %}
+<!--자바스크립트 End-->
+</body>
+</html>
